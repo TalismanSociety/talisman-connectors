@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "build": "preconstruct build",
+    "prepublishOnly": "rimraf dist && preconstruct build",
     "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
   },
   "peerDependencies": {
