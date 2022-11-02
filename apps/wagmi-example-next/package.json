@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:wagmi": "next dev",
     "build:dapp": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf .next && rimraf node_modules"
+    "clean": "rimraf .next && rimraf node_modules && rimraf .turbo"
   },
   "dependencies": {
     "@talismn/wagmi-connector": "*",

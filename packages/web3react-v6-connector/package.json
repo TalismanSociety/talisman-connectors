@@ -33,7 +33,7 @@
     "build": "tsdx build",
     "lint": "tsdx lint src",
     "prepublishOnly": "rimraf dist && tsdx build",
-    "clean": "rimraf dist && rimraf node_modules"
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo && rimraf .rts2_cache_cjs && rimraf .rts2_cache_esm"
   },
   "dependencies": {
     "@web3-react/abstract-connector": "^6.0.7",

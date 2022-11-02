@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build:dapp": "next build && next export",
-    "clean": "rimraf .next && rimraf .swc && rimraf node_modules"
+    "clean": "rimraf .next && rimraf .swc && rimraf node_modules && rimraf .turbo"
   },
   "version": "6.0.0",
   "dependencies": {

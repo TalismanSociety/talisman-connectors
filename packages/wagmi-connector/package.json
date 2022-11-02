@@ -6,9 +6,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "module": "dist/wagmi-connector.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/talismn-wagmi-connector.cjs.js",
+  "module": "dist/talismn-wagmi-connector.esm.js",
+  "typings": "dist/talismn-wagmi-connector.cjs.d.ts",
   "files": [
     "dist",
     "src"
@@ -19,16 +19,16 @@
     "connector"
   ],
   "scripts": {
-    "dev": "tsdx watch --target node --verbose",
-    "build": "tsdx build --target node",
-    "lint": "tsdx lint src",
-    "prepublishOnly": "rimraf dist && tsdx build --target node",
-    "clean": "rimraf dist && rimraf node_modules"
+    "build": "preconstruct build",
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
   },
   "peerDependencies": {
     "@wagmi/core": "^0.4.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-typescript": "^7.18.6",
+    "@preconstruct/cli": "^2.1.5",
     "@wagmi/core": "^0.4.9",
     "ethers": "^5.7.2",
     "typescript": "^4.8.4"

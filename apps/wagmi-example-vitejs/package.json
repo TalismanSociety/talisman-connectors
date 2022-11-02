@@ -6,7 +6,7 @@
     "dev": "vite",
     "build:dapp": "tsc && vite build",
     "preview": "vite preview",
-    "clean": "rimraf dist && rimraf node_modules"
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
   },
   "dependencies": {
     "@talismn/wagmi-connector": "*",
