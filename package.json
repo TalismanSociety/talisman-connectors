@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --concurrency=50 --no-cache",
+    "dev": "turbo run dev --concurrency=50",
     "dev:wagmi": "turbo run dev:wagmi",
     "release": "turbo run release",
     "lint": "turbo run lint",
