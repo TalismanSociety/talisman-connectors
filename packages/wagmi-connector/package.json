@@ -23,13 +23,13 @@
     "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
   },
   "peerDependencies": {
-    "@wagmi/core": "^0.4.7"
+    "@wagmi/core": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.0",
+    "@babel/core": "^7.19.6",
     "@babel/preset-typescript": "^7.18.6",
-    "@preconstruct/cli": "^2.1.5",
-    "@wagmi/core": "^0.4.9",
+    "@preconstruct/cli": "^2.2.2",
+    "@wagmi/core": "^0.6.8",
     "ethers": "^5.7.2",
     "typescript": "^4.8.4"
   }
