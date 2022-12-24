@@ -1,5 +1,5 @@
 {
-  "name": "example-dev",
+  "name": "wagmi-example-nextjs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
