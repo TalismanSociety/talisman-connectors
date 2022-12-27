@@ -16,13 +16,14 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:dapp": "turbo run build:dapp",
     "dev": "turbo run dev --concurrency=50",
     "dev:wagmi": "turbo run dev:wagmi",
     "release": "turbo run release",
     "lint": "turbo run lint",
     "postinstall": "preconstruct dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "rimraf **/node_modules **/.turbo **/dist **/build **/.next .yarn/cache"
+    "clean": "rimraf **/node_modules & rimraf **/.turbo & rimraf **/dist & rimraf **/build & rimraf **/.next & rimraf **/out"
   },
   "devDependencies": {
     "turbo": "^1.6.3"

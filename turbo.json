@@ -1,8 +1,14 @@
 {
   "pipeline": {
     "build": {
+      "dependsOn": ["^build"],
       "cache": false,
       "outputs": ["dist/**"]
+    },
+    "build:dapp": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "outputs": ["dist/**", "build/**", "out/**"]
     },
     "lint": {
       "outputs": []
