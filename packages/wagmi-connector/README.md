@@ -39,7 +39,7 @@ export const config = createConfig({
 
 ## Version compatibility
 
-`wagmi` 1.x is compatible with current version of `@talismn/wagmi-connector`
-`wagmi` 0.9.x is compatible with `@talismn/wagmi-connector` version 0.2x.
-`wagmi` 0.8.x isn't compatible.
-`wagmi` 0.7.x is compatible with `@talismn/wagmi-connector` version 0.1.x.
+- `wagmi` 1.x is compatible with current version of `@talismn/wagmi-connector`
+- `wagmi` 0.9.x is compatible with `@talismn/wagmi-connector` version 0.2x.
+- `wagmi` 0.8.x isn't compatible.
+- `wagmi` 0.7.x is compatible with `@talismn/wagmi-connector` version 0.1.x.
