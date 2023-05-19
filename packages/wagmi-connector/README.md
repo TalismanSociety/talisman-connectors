@@ -17,26 +17,29 @@ chains?: Chain[]
 ## Example
 
 ```javascript
-import { WagmiConfig, configureChains, createClient, defaultChains } from 'wagmi'
+import { configureChains, createConfig } from 'wagmi'
+import { goerli, mainnet } from 'wagmi/chains'
 import { TalismanConnector } from '@talismn/wagmi-connector'
 
-const { chains, provider, webSocketProvider } = configureChains(defaultChains, [alchemyProvider({ alchemyId })])
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [mainnet, ...(process.env.NODE_ENV === 'development' ? [goerli] : [])],
+  [publicProvider()]
+)
 
-const client = createClient({
+export const config = createConfig({
   autoConnect: true,
   connectors: [
-    new TalismanConnector({
-      chains,
-    }),
+    new TalismanConnector({ chains }),
     //...other connectors
   ],
-  provider,
-  webSocketProvider,
+  publicClient,
+  webSocketPublicClient,
 })
 ```
 
 ## Version compatibility
 
-`wagmi` 0.9.x is compatible with current version of `@talismn/wagmi-connector`.
+`wagmi` 1.x is compatible with current version of `@talismn/wagmi-connector`
+`wagmi` 0.9.x is compatible with `@talismn/wagmi-connector` version 0.2x.
 `wagmi` 0.8.x isn't compatible.
 `wagmi` 0.7.x is compatible with `@talismn/wagmi-connector` version 0.1.x.
