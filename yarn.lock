@@ -3077,19 +3077,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@talismn/wagmi-connector@*, @talismn/wagmi-connector@workspace:packages/wagmi-connector":
+"@talismn/wagmi-connector@workspace:*, @talismn/wagmi-connector@workspace:packages/wagmi-connector":
   version: 0.0.0-use.local
   resolution: "@talismn/wagmi-connector@workspace:packages/wagmi-connector"
   dependencies:
     "@wagmi/core": ^1.0.5
     tsup: ^6.7.0
-    typescript: ^4.9.4
+    typescript: ^5.0.4
     viem: ^0.3.31
   peerDependencies:
-    "@wagmi/core": ">=0.8.5 <0.9.0"
-  peerDependenciesMeta:
-    "@wagmi/core":
-      optional: true
+    "@wagmi/core": 1.x
+    viem: "*"
   languageName: unknown
   linkType: soft
 
@@ -17257,7 +17255,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "wagmi-example-next@workspace:apps/wagmi-example-next"
   dependencies:
-    "@talismn/wagmi-connector": "*"
+    "@talismn/wagmi-connector": "workspace:*"
     "@types/node": ^17.0.31
     "@types/react": ^18.0.9
     "@types/react-dom": ^18.0.3

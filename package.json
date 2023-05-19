@@ -44,7 +44,7 @@
   },
   "preconstruct": {
     "packages": [
-      "packages/*"
+      "packages/web3react-v6-connector"
     ]
   }
 }
