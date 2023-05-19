@@ -1,5 +1,10 @@
 import { Chain, InjectedConnector, InjectedConnectorOptions } from '@wagmi/core'
 
+declare global {
+  interface Window {
+    talismanEth: any
+  }
+}
 export type TalismanConnectorOptions = InjectedConnectorOptions & {
   // nothing for now
 }
@@ -20,7 +25,6 @@ export class TalismanConnector extends InjectedConnector {
       options: {
         name: 'Talisman',
         shimDisconnect: true,
-        shimChainChangedDisconnect: true,
         ...options_,
       },
     })
