@@ -1,5 +1,11 @@
 # Talisman EVM Connectors
 
+> ⚠️ **This repository is archived and no longer maintained.**
+>
+> Do not use it in new projects. The code here is kept for reference only and will not receive updates, bug fixes or security patches.
+>
+> The `@talismn/wagmi-connector`, `@talismn/web3react-v6-connector` npm packages are deprecated.
+
 This monorepo contains the the source code for Talisman specific connectors to the different EVM frameworks.
 
 | Framework    | Connector                                                                   | Example                                       |
